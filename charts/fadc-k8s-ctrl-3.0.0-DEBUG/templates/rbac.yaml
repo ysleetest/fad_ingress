@@ -52,7 +52,12 @@ rules:
   - watch
   - update
 {{- end }}
-
+- apiGroups: ["fadk8sctrl.fortinet.com"]
+  resources: ["virtualservers"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+- apiGroups: ["fadk8sctrl.fortinet.com"]
+  resources: ["virtualservers/status"]
+  verbs: ["get", "update", "patch"]
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1

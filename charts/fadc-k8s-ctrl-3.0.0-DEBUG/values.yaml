@@ -4,7 +4,7 @@
 # FortiADC Ingress Controller image from Dockerhub.com
 image:
   repository: ysleetest/fad-k8s-ctrl
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: "3.0.0.2"
 
 nameOverride: ""

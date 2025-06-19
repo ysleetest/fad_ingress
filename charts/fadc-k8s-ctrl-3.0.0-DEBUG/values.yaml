@@ -5,7 +5,7 @@
 image:
   repository: ysleetest/fad-k8s-ctrl
   pullPolicy: Always
-  tag: "3.0.0.3"
+  tag: "3.0.0.4"
 
 nameOverride: ""
 fullnameOverride: ""
